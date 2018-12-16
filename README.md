@@ -2,7 +2,12 @@
 
 ```shell
 pip install -r requirements.txt
+
+# 更新
+pip freeze > requirements.txt
 ```
+
+---
 
 # テスト方法
 
@@ -19,6 +24,9 @@ pytest
 
 # テストファイルを選択して実行
 pytest test_capitalize.py
+
+# すべてのテストをwatchモードで実行
+pytest-watch
 ```
 
 ## フィクスチャ
